@@ -44,12 +44,7 @@ public class DemoController {
         model.addAttribute("sessionList", hashList);
 
         // セッションから指定したキー値に対応するリストを取得し、sessionListに設定(NG例呼出)
-        //try{
-        //    List<String> hashList = new DemoUtilNg().getHashList("key1");
-        //    model.addAttribute("sessionList", hashList);
-        //}catch(Exception ex){
-        //    model.addAttribute("sessionList", null);
-        //}
+        // 上記処理をNG例サンプルとして記載していた
 
         // セッションの値を破棄し、次画面に遷移
         request.getSession(false).invalidate();
